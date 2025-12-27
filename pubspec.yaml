@@ -1,0 +1,76 @@
+name: gestion_depenses
+description: Application de gestion des dépenses personnelles
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.3
+
+# =========================
+# DEPENDENCIES
+# =========================
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # 🔥 Firebase
+  firebase_core: ^3.7.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.4
+  firebase_storage: ^12.4.10
+
+  # 🖼️ Image picker
+  image_picker: ^1.0.7
+
+  # 📅 Dates & formats
+  intl: ^0.19.0
+
+# =========================
+# DEV DEPENDENCIES
+# =========================
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # 🎨 Icône de l'application
+  flutter_launcher_icons: ^0.14.4
+
+  # 🚀 Splash screen
+  flutter_native_splash: ^2.4.1
+
+# =========================
+# FLUTTER CONFIG
+# =========================
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon/app_icon.png
+    - assets/splash/splash_logo.png
+
+# =========================
+# CONFIG ICÔNE APPLICATION
+# =========================
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  min_sdk_android: 21
+  adaptive_icon_background: "#6A1B9A"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+
+# =========================
+# CONFIG SPLASH SCREEN
+# =========================
+flutter_native_splash:
+  color: "#6A1B9A"
+  image: assets/splash/splash_logo.png
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
